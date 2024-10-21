@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    
+</body>
+<script>
+    //setInterval(function(){
+    //    console.log("Anam", Date.now());
+        
+    //}, 1000)
+
+    // will continuos the number will not stop
+    const saydate = function(str){
+        console.log(str,"Anam", Date.now());
+        
+    }
+
+    setInterval(saydate, 1000, "qasim")
+
+
+    // To stop the printing
+    const intervalid = setInterval(saydate,
+        1000, "qasim"
+    )
+    clearInterval(intervalid)
+</script>
+</html>
